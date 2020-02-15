@@ -1,0 +1,11 @@
+version: '3'
+services:
+  python:
+    build: python
+    working_dir: /root/work/
+    tty: true
+    volumes:
+      - ./python/src:/root/work:z
+    ports:
+      - 5000:5000
+    env_file: .env

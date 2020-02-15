@@ -1,0 +1,12 @@
+*/zero/*.png
+*.log
+external
+datasets
+pixiv
+__pycache__
+.env
+.DS_Store
+illustration2vec
+lbpcascade_animeface
+plainml
+waifu2x

@@ -1,0 +1,37 @@
+import numpy as np
+
+print("shapeと配列の形を頭の中でリンクさせる")
+a = np.array([1])
+print(a.shape)
+a = np.array([1,2])
+print(a.shape)
+a = np.array([1,2,3])
+print(a.shape)
+
+a = np.array([[1], [1]])
+print(a.shape)
+a = np.array([[1,2], [1,2]])
+print(a.shape)
+a = np.array([[1,2,3], [1,2,3]])
+print(a.shape)
+
+a = np.array([[1], [1]])
+print(a.shape)
+a = np.array([[1], [1], [1]])
+print(a.shape)
+a = np.array([[1], [1], [1], [1]])
+print(a.shape)
+
+a = np.array([[[1,2],[1,2]], [[1,2],[1,2]]])
+print(a.shape)
+
+x = np.array([[1,2],[1,2],[1,2],[1,2]])
+w = np.array([[1,2,3], [1,2,3]])
+print("行数は入力のまま、重みの列数に分かれて出力される")
+print(x.shape)
+print(w.shape)
+print(np.dot(x, w).shape)
+print("入力の列数と重みの行数が等しくないと掛けることはできない")
+print(w.shape)
+print(x.shape)
+print(np.dot(w, x).shape)
