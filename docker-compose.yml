@@ -2,7 +2,7 @@ version: '3'
 services:
   python:
     build: python
-    working_dir: /root/python/
+    working_dir: /root/python/src
     tty: true
     volumes:
       - ./python:/root/python:z
