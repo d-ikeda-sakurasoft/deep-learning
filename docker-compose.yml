@@ -2,10 +2,10 @@ version: '3'
 services:
   python:
     build: python
-    working_dir: /root/work/
+    working_dir: /root/python/
     tty: true
     volumes:
-      - ./python/src:/root/work:z
+      - ./python:/root/python:z
     ports:
       - 5000:5000
     env_file: .env
